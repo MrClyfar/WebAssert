@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Assert Failed</title>
+
+    <style>
+        * {
+            font-family: Arial,sans-serif;
+        }
+
+        .title {
+            font-weight: bold;
+            color: red;
+        }
+
+        .assert-message {
+            color: blue;
+            font-style: italic;
+        }
+
+        .method-name {
+            font-weight: bold;
+            color: saddlebrown;
+        }
+
+        .file-path {
+            font-weight: bold;
+            color: saddlebrown;
+        }
+
+        .line-number {
+            font-weight: bold;
+            color: saddlebrown;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1 class="title">Assert Failed</h1>
+        <span class="assert-message">{{AssertMessage}}</span>
+        <br />
+        <br />
+        <span class="method-name">Method Name:&nbsp;</span><span>{{MethodName}}</span>
+        <br />
+        <span class="file-path">File Path:&nbsp;</span><span>{{FilePath}}</span>
+        <br />
+        <span class="line-number">Line Number:&nbsp;</span><span>{{LineNumber}}</span>
+    </div>
+</body>
+</html>
